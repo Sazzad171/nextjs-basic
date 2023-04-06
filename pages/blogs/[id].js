@@ -1,10 +1,26 @@
 import React from 'react';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 
-export default function BlogDetails() {
-    const router = useRouter();
-    const {id} = router.query;
+export default function BlogDetails({blogDetails}) {
+    // const router = useRouter();
+    // const {id} = router.query;
   return (
-    <div>Blog Details id is: {id}</div>
+    <section>
+      <div className="container">
+        <h2>{blogDetails.title}</h2>
+        <p>{blogDetails.body}</p>
+      </div>
+    </section>
   )
+}
+
+export const getServerSideProps = async (context) => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts/" + context.params.id);
+  const blogDetails = await res.json();
+
+  return {
+    props: {
+      blogDetails
+    }
+  }
 }

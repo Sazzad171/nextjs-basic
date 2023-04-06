@@ -1,5 +1,3 @@
-import '@/styles/globals.css';
-
 // bootstrap css
 import 'bootstrap/dist/css/bootstrap.min.css';
 
