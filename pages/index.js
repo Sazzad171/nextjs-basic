@@ -9,8 +9,20 @@ export default function Home() {
   return (
     <>
       <Meta title={"Home page"} />
-      <section>
-        <h1>This is home page</h1>
+      <section className='py-3'>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4 mb-3">
+              <div className="card p-3">
+                <h4>test</h4>
+                <p>lorem</p>
+                <p>
+                  <a href="#">Details</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   )
