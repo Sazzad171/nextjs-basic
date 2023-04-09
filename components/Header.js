@@ -19,6 +19,9 @@ export default function Header() {
             <Link href="/about" className='nav-link'>
               About
             </Link>
+            <Link href="/comments" className='nav-link'>
+              Comments
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -14,6 +14,7 @@ export default function BlogDetails({blogDetails}) {
   )
 }
 
+// server side rendering
 export const getServerSideProps = async (context) => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts/" + context.params.id);
   const blogDetails = await res.json();
