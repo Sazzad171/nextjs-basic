@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Image from 'next/image'
+// import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+// import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 import Meta from '@/components/Meta'
